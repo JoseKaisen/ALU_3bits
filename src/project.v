@@ -17,8 +17,9 @@ module tt_um_example (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
-  assign uio_out = 0;
-  assign uio_oe  = 0;
-
+    ALU U2 (.A(ui_in[2:0]), .B(ui_in[5:3]), .ctrl(uio_in[2:0]), .Leds(uo_out[5:0]));
+    
+    assign uio_oe= 8'b 00111111;
+    assign uo_out= 8'b 00111111;
+  
 endmodule
