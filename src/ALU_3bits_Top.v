@@ -4,7 +4,7 @@ wire [5:0]Y3_MULT;
 wire [3:0]Y1_ADD;
 wire [2:0] Y2_MIN,Y4_DIV, Y5_MOD; 
 reg [5:0] aux;
-arithmetic_operators U2 (.A(A),.B(B), .Y1_ADD(Y1_ADD), 
+    arithmetic_operators U2 (.A(A), .B(B), .Y1_ADD(Y1_ADD), 
 .Y2_MIN(Y2_MIN), .Y3_MULT(Y3_MULT), .Y4_DIV(Y4_DIV), .Y5_MOD(Y5_MOD));
 assign Leds= aux;
 always@(*)
