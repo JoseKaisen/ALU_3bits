@@ -27,9 +27,16 @@ Combination 5 for module: 100
 The remaining combinations do not have an assigned operating function, therefore, the remaining combinations will not generate any result at the output of the device.
 
 ## How to test
-
-Explain how to use your project
+Choose two values of 3-bits for the inputs A and B by using switches, for example: A=111 and B=101.
+Then, use the 3-bit selector that has 3 switches to choose one of the 5 combinations to select an operation (sum, substraction, multiplication, division and module) so that it can be obtained the wanted results observed at the output (Leds).
+For example: we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 011 then the operation will be A=111 / B=101 (division).
+Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 010 then the operation will be A=111 * B=101 (multiplication).
+Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 000 then the operation will be A=111 + B=101 (sum).
+The results will be shown at the 6-bit output that uses 6 Leds to demonstrate the results of any of the 5 operations available in the ALU.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+3-bit input "A": uses 3 switches.
+3-bit input "B": uses 3 switches.
+3-bit input "Selector": uses 3 switches.
+6-bit output "Results": uses 6 Leds.
