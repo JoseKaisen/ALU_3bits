@@ -21,5 +21,6 @@ module tt_um_example (
     
     assign uio_oe= 8'b 00111111;
     assign uo_out= 8'b 00111111;
-  
+    assign uio_out= 8'b 00000000;
+    
 endmodule
