@@ -29,7 +29,7 @@ The remaining combinations do not have an assigned operating function, therefore
 ## How to test
 
 Choose two values of 3-bits for the inputs A and B by using switches, for example: A=111 and B=101.
-Then, use the 3-bit selector that has 3 switches to choose one of the 5 combinations to select an operation (sum, substraction, multiplication, division and module) so that it can be obtained the wanted results observed at the output (Leds).
+Then, use the 3-bit selector that has 3 switches to choose one of the 5 combinations to select an operation (sum[000], substraction[001], multiplication[010], division[011] and module[100]) so that it can be obtained the wanted results observed at the output (Leds).
 
 For example: we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 011 then the operation will be A=111 / B=101 (division).
 
